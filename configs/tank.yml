@@ -1,4 +1,4 @@
-server: "192.168.2.2"
+server: 172.17.0.2
 topic: "solarControl/tank/all"
 map:
   "solarControl/tank/temp_up": "temp_up"
