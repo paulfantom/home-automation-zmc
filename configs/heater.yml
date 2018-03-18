@@ -1,0 +1,6 @@
+server: "192.168.2.2"
+topic: "solarControl/heater/all"
+map:
+  "solarControl/heater/temp_in": "temp_input"
+  "solarControl/heater/temp_out": "temp_output"
+

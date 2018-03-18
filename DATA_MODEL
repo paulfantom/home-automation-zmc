@@ -1,0 +1,78 @@
+# BASIC DATA MODEL
+
+```yaml
+heater:
+  temp_input: float
+  temp_output: float
+  burner: bool (ON/OFF)
+  switch: str/bool (CO/CWU)
+
+solar:
+  temp_in: float
+  temp_out: float
+  temp_ext: float
+  flow: float (0-100)
+  pump: bool (ON/OFF)
+  switch: bool (ON/OFF)
+
+circulation:
+  pump: bool (ON/OFF)
+
+tank:
+  temp_up: float
+
+room:
+  temp_real: float
+  temp_feel: float
+  humidity: float
+  pressure: float
+```
+
+# EXTENDED DATA MODEL
+
+```yaml
+wifi_sensor_temp:
+  temperature:
+    value
+    unit
+  humidity:
+    value
+    unit
+  meta:
+    date
+    battery
+    measurement_time
+    name
+    name_extended
+```  
+
+# SCHEDULE MODEL
+
+## current
+"{"week":[0,0,0,0,0,1,1],"work":[{"to":[6,30],"from":[5,30],"temp":21.9},{"to":[21,45],"from":[14,0],"temp":22.6}],"other":18.0,"free":[{"to":[22,0],"from":[6,30],"temp":22.1}]}"
+
+## next:
+
+```yaml
+temp_base: float
+typical:
+  - from: (int, int) - (hour, minute)
+    to: (int, int)
+    temp: float
+  - from: (int, int)
+    to: (int, int)
+    temp: float
+holiday:
+  - from: (int, int)
+    to: (int, int)
+    temp: float
+  - from: (int, int)
+    to: (int, int)
+    temp: float
+```
+
+
+
+
+
+

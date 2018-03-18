@@ -1,0 +1,8 @@
+server: "192.168.2.2"
+topic: "room/1/sensor"
+map:
+  "room/1/temp_real": "temperature"
+  "room/1/temp_feel": "apparent"
+  "room/1/humidity": "humidity"
+  "room/1/pressure": "pressure"
+

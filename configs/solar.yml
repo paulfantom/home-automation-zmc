@@ -1,0 +1,8 @@
+server: "192.168.2.2"
+topic: "solarControl/solar/all"
+map:
+  "solarControl/solar/temp_in": "temp_input"
+  "solarControl/solar/temp_out": "temp_output"
+  "solarControl/solar/temp": "temp_external"
+  "solarControl/solar/pump": "pump_flow"
+
